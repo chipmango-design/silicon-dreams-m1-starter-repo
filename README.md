@@ -73,7 +73,7 @@ You will then submit the latest commit to the ChipIgnite shuttle from the ChipFo
 
 ## Relationship to `chipdiscover-verilog-template`
 
-This repo is the Module 1 starter. For Module 3 you will also fork [`chipdiscover-verilog-template`](https://github.com/chipfoundry/chipdiscover-verilog-template) — a blank-slate template — because your final boss submission is a multi-module design that integrates the elevator (from this repo) with a new arbiter, a clock-gating cell, and AXIOM's black-box module.
+This repo is the Module 1 starter. For Module 3 you will also fork [`chipdiscover-verilog-template`](https://github.com/chipmango/silicon-dreams-m1-starter-repo) — a blank-slate template — because your final boss submission is a multi-module design that integrates the elevator (from this repo) with a new arbiter, a clock-gating cell, and AXIOM's black-box module.
 
 ## Learning outcomes (Module 1)
 
@@ -91,7 +91,7 @@ By completing this module, learners will be able to:
 ## Resources
 
 - ChipFoundry platform docs — [chipfoundry.io/docs](https://chipfoundry.io/docs)
-- Silicon Dreams course home — [chipmango.io/silicon-dreams](https://chipmango.io/silicon-dreams)
+- Silicon Dreams course home — [chipmango.com/silicon-dreams](https://chipmango.com/silicon-dreams)
 - SkyWater SKY130 PDK — [skywater-pdk.readthedocs.io](https://skywater-pdk.readthedocs.io)
 - LibreLane documentation — [librelane.readthedocs.io](https://librelane.readthedocs.io)
 - Course Discord — link distributed with enrolment.

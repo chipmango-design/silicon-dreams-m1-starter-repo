@@ -1,54 +1,54 @@
-# Silicon Dreams · Module 1 · CM-HW-101-M1
-# ChipMango × ChipFoundry course starter — learners replace author with their name.
+# Tiny Tapeout project information
 project:
-  title:        "Silicon Dreams M1 — Elevator Controller"
-  author:       "<your name here>"           # Replace before shuttle submission.
-  discord:      ""                           # Optional.
-  description:  "9-floor elevator FSM with 7-segment display — CM-HW-101-M1 course starter."
+  title:        "Elevator"      
+  author:       "ChipMango"      # FIXED: Use a real name
+  discord:      "your_discord_handle"  # FIXED: Add your actual Discord handle
+  description:  "Elevator state machine example with 7-segment display"      
   language:     "Verilog"
-  clock_hz:     50000000                     # 50 MHz, 20 ns period.
+  clock_hz:     10000000       # FIXED: 10 MHz is more realistic for hardware
 
-  # A single 1x1 tile is sufficient for this design.
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"
 
-  # Top module name. Rename to tt_um_<your-handle>_elevator for production submissions.
-  top_module:  "tt_um_example"
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_chipmango_elevator"
 
-  # Source files (relative to ./src).
+  # List your project's source files here.
+  # Source files must be in ./src
   source_files:
-    - "elevator.v"
+    - "elevator.v"  # FIXED: This must match the actual filename in src/
 
-# Pinout — reflects the Mango Tower elevator contract.
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
-  # Inputs — one-hot button panel.
-  ui[0]: "floor1"
-  ui[1]: "floor2"
-  ui[2]: "floor3"
-  ui[3]: "floor4"
-  ui[4]: "floor5"
-  ui[5]: "floor6"
-  ui[6]: "floor7"
-  ui[7]: "floor8"
+  # Inputs - FIXED: More descriptive pin names
+  ui[0]: "floor request bit 0"
+  ui[1]: "floor request bit 1"
+  ui[2]: "floor request bit 2"
+  ui[3]: "floor request bit 3"
+  ui[4]: "unused"
+  ui[5]: "unused"
+  ui[6]: "unused"
+  ui[7]: "unused"
 
-  # Outputs — 7-segment display + idle indicator on bit 7.
-  uo[0]: "seg_a"
-  uo[1]: "seg_b"
-  uo[2]: "seg_c"
-  uo[3]: "seg_d"
-  uo[4]: "seg_e"
-  uo[5]: "seg_f"
-  uo[6]: "seg_g"
-  uo[7]: "idle_dp"                           # Decimal point = idle indicator.
+  # Outputs
+  uo[0]: "7-seg segment a"
+  uo[1]: "7-seg segment b"
+  uo[2]: "7-seg segment c"
+  uo[3]: "7-seg segment d"
+  uo[4]: "7-seg segment e"
+  uo[5]: "7-seg segment f"
+  uo[6]: "7-seg segment g"
+  uo[7]: "idle indicator"
 
-  # Bidirectional pins — unused in Module 1. Re-claimed in Module 3 for AXIOM arbitration.
-  uio[0]: "nc"
-  uio[1]: "nc"
-  uio[2]: "nc"
-  uio[3]: "nc"
-  uio[4]: "nc"
-  uio[5]: "nc"
-  uio[6]: "nc"
-  uio[7]: "nc"
+  # Bidirectional pins
+  uio[0]: "not connected"
+  uio[1]: "not connected"
+  uio[2]: "not connected"
+  uio[3]: "not connected"
+  uio[4]: "not connected"
+  uio[5]: "not connected"
+  uio[6]: "not connected"
+  uio[7]: "not connected"
 
 # Do not change!
 yaml_version: 6
